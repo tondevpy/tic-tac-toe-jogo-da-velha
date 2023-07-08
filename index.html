@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da velha</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .quadrado {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(230, 230, 230);
+            margin: 5px;
+            display: inline-block;
+            position: relative;
+            vertical-align: top;
+            border-radius: 5px;
+        }
+
+        .quadrado-img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="inicial">
+        <div>
+            <h1>Seja bem vindo ao Tic-tac-toe (jogo da velha)</h1>
+
+            <p>Veja como é simples jogar</p>
+            <small>- Informe os nomes dos jogadores</small>
+            <small>- Clique em iniciar</small>
+            <small>- se divirta</small>
+            <br><br>
+            <label for="jogador1">Jogador 1</label>
+            <input type="text" name="jogador1" id="jogador1"><br><br>
+            <label for="jogador2">Jogador 2</label>
+            <input type="text" name="jogador2" id="jogador2">
+            <br><br>
+            <button id="iniciar">Iniciar</button>
+        </div>
+    </div>
+    
+    <div class="menuJogo">
+        <div class="container" id="container">
+            <p>Jogadas: <span id="jogadas"></span></p>
+            <p>Quem joga: <span id="jogador"></span></p>
+            <p></p>
+            <div class="quadrado" onclick="quadrado1()"><img id="quadrado1" class="quadrado-img" src="" alt=""></div>
+            <div class="quadrado" onclick="quadrado2()"><img id="quadrado2" class="quadrado-img" src="" alt=""></div>
+            <div class="quadrado" onclick="quadrado3()"><img id="quadrado3" class="quadrado-img" src="" alt=""></div>
+
+            <div>
+                <div class="quadrado" onclick="quadrado4()"><img id="quadrado4" class="quadrado-img" src="" alt=""></div>
+                <div class="quadrado" onclick="quadrado5()"><img id="quadrado5" class="quadrado-img" src="" alt=""></div>
+                <div class="quadrado" onclick="quadrado6()"><img id="quadrado6" class="quadrado-img" src="" alt=""></div>
+
+                <div>
+                    <div class="quadrado" onclick="quadrado7()"><img id="quadrado7" class="quadrado-img" src="" alt=""></div>
+                    <div class="quadrado" onclick="quadrado8()"><img id="quadrado8" class="quadrado-img" src="" alt=""></div>
+                    <div class="quadrado" onclick="quadrado9()"><img id="quadrado9" class="quadrado-img" src="" alt=""></div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div>
+        <p id="rodape">Desenvolvido por TonDevPy</p>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>

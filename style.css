@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap');
+
+*{
+    font-family: 'Bacasime Antique', serif;
+    font-weight: bold;
+}
+body{
+    background: rgb(185, 185, 185);
+}
+#inicial{
+    display: flex;
+    justify-content: center;
+}
+#inicial div{
+    text-align: center;
+}
+#inicial div small{
+    display: block;
+}
+input{
+    border: none;
+    border-bottom: 1px solid black;
+    background: #00000000;
+    letter-spacing: 1px;
+    text-align: center;
+    outline: none;
+}
+button{
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+}
+button:hover{
+    background: gray;
+    transition: 1s;
+}
+.menuJogo{
+    display: flex;
+    justify-content: center;
+    
+}
+.container{
+    margin-top: 25px;
+    padding: 10px;
+    display: none;
+}
+#rodape{
+    text-align: center;
+}
