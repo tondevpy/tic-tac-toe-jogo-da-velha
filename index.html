@@ -22,6 +22,48 @@
             max-width: 100%;
             max-height: 100%;
         }
+
+        .fileira {
+            text-align: center;
+        }
+
+        @media(max-width: 700px) {
+            .quadrado {
+                width: 150px;
+                height: 150px;
+            }
+        }
+
+        @media(max-width: 530px) {
+            .quadrado {
+                width: 100px;
+                height: 100px;
+            }
+        }
+        @media(max-width: 380px) {
+            .quadrado {
+                width: 75px;
+                height: 75px;
+            }
+        }
+        @media(max-width: 300px) {
+            .quadrado {
+                width: 50px;
+                height: 50px;
+            }
+        }
+        @media(max-width: 250px) {
+            .quadrado {
+                width: 25px;
+                height: 25px;
+            }
+        }
+        @media(max-width: 150px) {
+            .quadrado {
+                width: 10px;
+                height: 10px;
+            }
+        }
     </style>
 </head>
 
@@ -43,29 +85,30 @@
             <button id="iniciar">Iniciar</button>
         </div>
     </div>
-    
+
     <div class="menuJogo">
         <div class="container" id="container">
             <p>Jogadas: <span id="jogadas"></span></p>
             <p>Quem joga: <span id="jogador"></span></p>
             <p></p>
-            <div class="quadrado" onclick="quadrado1()"><img id="quadrado1" class="quadrado-img" src="" alt=""></div>
-            <div class="quadrado" onclick="quadrado2()"><img id="quadrado2" class="quadrado-img" src="" alt=""></div>
-            <div class="quadrado" onclick="quadrado3()"><img id="quadrado3" class="quadrado-img" src="" alt=""></div>
+            <div class="fileira">
+                <div class="quadrado" onclick="quadrado1()"><img id="quadrado1" class="quadrado-img" src="" alt=""></div>
+                <div class="quadrado" onclick="quadrado2()"><img id="quadrado2" class="quadrado-img" src="" alt=""></div>
+                <div class="quadrado" onclick="quadrado3()"><img id="quadrado3" class="quadrado-img" src="" alt=""></div>
+            </div>
 
-            <div>
+            <div class="fileira">
                 <div class="quadrado" onclick="quadrado4()"><img id="quadrado4" class="quadrado-img" src="" alt=""></div>
                 <div class="quadrado" onclick="quadrado5()"><img id="quadrado5" class="quadrado-img" src="" alt=""></div>
                 <div class="quadrado" onclick="quadrado6()"><img id="quadrado6" class="quadrado-img" src="" alt=""></div>
+            </div>
 
-                <div>
-                    <div class="quadrado" onclick="quadrado7()"><img id="quadrado7" class="quadrado-img" src="" alt=""></div>
-                    <div class="quadrado" onclick="quadrado8()"><img id="quadrado8" class="quadrado-img" src="" alt=""></div>
-                    <div class="quadrado" onclick="quadrado9()"><img id="quadrado9" class="quadrado-img" src="" alt=""></div>
-                </div>
+            <div class="fileira">
+                <div class="quadrado" onclick="quadrado7()"><img id="quadrado7" class="quadrado-img" src="" alt=""></div>
+                <div class="quadrado" onclick="quadrado8()"><img id="quadrado8" class="quadrado-img" src="" alt=""></div>
+                <div class="quadrado" onclick="quadrado9()"><img id="quadrado9" class="quadrado-img" src="" alt=""></div>
             </div>
         </div>
-        
     </div>
     <div>
         <p id="rodape">Desenvolvido por TonDevPy</p>
